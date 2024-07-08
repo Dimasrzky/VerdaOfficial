@@ -1,0 +1,10 @@
+Di era perkembangan teknologi yang pesat dan meningkatnya kesadaran akan pentingnya keberlanjutan lingkungan, muncul kebutuhan mendesak untuk mengembangkan keterampilan tenaga kerja dalam bidang Agrikultur. Menjawab tantangan ini, kami memperkenalkan Platform Pengembangan Pendidikan dan Keterampilan Green Jobs.
+Platform ini merupakan sistem perangkat lunak yang dirancang untuk menyediakan pendidikan dan pelatihan komprehensif di bidang green jobs, yang meliputi energi terbarukan, pengelolaan limbah, pertanian berkelanjutan, dan banyak lagi. Dengan memanfaatkan teknologi digital, platform ini menawarkan:
+
+1. Kurikulum Berbasis Data: Materi pelatihan disusun berdasarkan analisis kebutuhan industri dan tren pasar kerja, memastikan relevansi dan efektivitas pendidikan.
+2. Pelatihan Interaktif: Menyediakan modul e-learning yang mencakup video tutorial, kuis, dan simulasi praktik, memungkinkan pembelajaran yang mendalam dan aplikatif.
+3. Pemantauan dan Evaluasi Kinerja: Sistem pemantauan yang canggih untuk melacak perkembangan peserta, memberikan umpan balik, dan terus meningkatkan kualitas pelatihan.
+   
+Dengan platform ini, kami berkomitmen untuk mendukung pembangunan berkelanjutan melalui peningkatan keterampilan tenaga kerja, mempersiapkan mereka untuk berkontribusi dalam ekonomi hijau, dan memenuhi tuntutan industri masa depan. Melalui pendidikan dan pelatihan yang terintegrasi dan berbasis data, kami percaya dapat menciptakan dampak positif yang signifikan bagi masyarakat dan lingkungan. Maka dari itu diperlukan upaya kolaboratif dari berbagai pihak, termasuk perusahaan, lembaga pelatihan, dan masyarakat, untuk mengatasi masalah pengangguran di kalangan pekerja kerah biru di Indonesia. 
+VERDA merupakan Aplikasi website edukasi sekaligus pencari lapangan pekerjaan yang berfokus dibidang Agrikultur. VERDA dapat menampilkan informasi lowongan pekerjaan dari berbagai jenjang pendidikan, karir, Lokasi, perusahaan,dan Kategori pekerjaan, sehingga dapat memudahkan dalam mencari pekerjaan sesuai dengan kriteria pengguna. Kami juga menyediakan Menu pelatihan bagi para pengguna yang masih dalam tahapan pemula.
+

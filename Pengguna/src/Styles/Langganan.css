@@ -1,0 +1,71 @@
+.anchor-pane {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff,
+    #11e1c9a7,
+    #03cbb3
+  );
+}
+
+.vbox {
+  padding: 10px;
+}
+
+.button {
+  -fx-background-color: #2e8b57;
+  -fx-text-fill: black;
+  -fx-font-size: 14px;
+  -fx-padding: 10px 20px;
+  -fx-border-radius: 5;
+  -fx-background-radius: 5;
+  -fx-cursor: hand;
+}
+
+.button:hover {
+  -fx-background-color: #3cb371;
+}
+
+.label {
+  -fx-padding: 5px;
+}
+
+.header-label {
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+}
+
+.kelas-economy {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #ffda83c4, #ffd983);
+  -fx-text-fill: black;
+  -fx-border-color: black;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 20;
+}
+
+.kelas-premium {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffffc8, #737373);
+  -fx-text-fill: black;
+  -fx-border-color: black;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 20;
+}
+
+.price-label {
+  -fx-font-size: 24px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #000;
+}
+
+.kolom-Search {
+  -fx-background-color: #ffffff00;
+  -fx-border-color: #000000;
+  -fx-border-radius: 23;
+}
+
+.sidebar {
+  -fx-background-radius: 0 20 0 0;
+  -fx-background-color: linear-gradient(to bottom, #03CBB3, #006A5D);
+}

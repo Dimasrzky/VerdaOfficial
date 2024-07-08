@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Styles/Desain.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BerandaController">
+   <left>
+      <fx:include source="Sidebar.fxml" />
+   </left>
+   <top>
+      <HBox prefHeight="75.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Image/icon%20cari.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="185.0" right="16.0" top="17.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="searchField" prefHeight="47.0" prefWidth="430.0" promptText="Recruitment Fresh Graduate" styleClass="kolom-Search">
+               <HBox.margin>
+                  <Insets left="-55.0" right="-611.0" top="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="38.0" />
+               </padding>
+            </TextField>
+            <ImageView fitHeight="59.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Image/Logo%20font.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Image/icon%20setting.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="668.0" top="18.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Image/icon%20pesan.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="-71.0" top="22.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Image/icon%20download.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="-75.0" top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="132.0" prefWidth="718.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #a7ff83; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pengguna">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahPengguna" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #43dde6; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lowongan">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahLowongan" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #cabbe9; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Program Pelatihan">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahProgram" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #fff98c; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Komunitas">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahKomunitas" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="132.0" prefWidth="718.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="132.0" prefWidth="144.0" style="-fx-background-color: #ffb174; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pengguna gabung pelatihan" textAlignment="CENTER" wrappingWidth="123.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahPelatihanPengguna" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #f090d9; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pengguna melamar pekerjaan" textAlignment="CENTER" wrappingWidth="123.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahLowonganPengguna" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #daeaf6; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pengguna Berlangganan" textAlignment="CENTER" wrappingWidth="123.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahLanggananPengguna" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="143.0" style="-fx-background-color: #caa653; -fx-background-radius: 20;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Postingan Komunitas" textAlignment="CENTER" wrappingWidth="123.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="jumlahKomunitasPengguna" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

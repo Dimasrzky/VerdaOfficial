@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KelasBelajarController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="799.0" preserveRatio="false">
+         <image>
+            <Image url="@../Styles/Image/farm%20background.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="backButton" fitHeight="33.0" fitWidth="26.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Styles/Image/icon%20back.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kembali" textAlignment="CENTER" wrappingWidth="71.21154403686523">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <SplitPane dividerPositions="0.16847826086956524" prefHeight="625.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="571.0" fitWidth="19.0" layoutX="56.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Styles/Image/progress%20line.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="571.0" prefWidth="660.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="63.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="65.0" prefWidth="113.0" style="-fx-background-color: #FFD983; -fx-border-width: 1; -fx-border-color: #000000; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                       <children>
+                                          <ImageView fx:id="gambarKelas" fitHeight="55.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Styles/Image/icon%20wortel.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                    <Text fx:id="namaKelas" strokeType="OUTSIDE" strokeWidth="0.0" text="Wortel" textAlignment="CENTER" wrappingWidth="64.99347305297852">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font></Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <ScrollPane prefHeight="486.0" prefWidth="660.0" style="-fx-background-color: transparent; -fx-background: transparent;">
+                                 <content>
+                                    <VBox fx:id="vboxdaftarmateri" prefHeight="471.0" prefWidth="609.0" spacing="15.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                         
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" right="20.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../Styles/Materi.css"  prefHeight="140.0" prefWidth="596.0" spacing="20.0" style="-fx-background-color: #03CBB3; -fx-background-radius: 10;" fx:controller="Controller.KuisItemController">
+    <children>
+        <StackPane prefHeight="109.0" prefWidth="106.0">
+            <children>
+                <ImageView fitHeight="109.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Styles/Image/icon%20quiz.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </StackPane>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Text fx:id="judulKuis" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuiz 1 pemahaman tentang tata cara menanam wortel" wrappingWidth="452.2501754760742">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+    <effect>
+        <DropShadow />
+    </effect>
+</HBox>

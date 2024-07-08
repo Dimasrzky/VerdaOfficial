@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="525.0" prefWidth="82.0" styleClass="sidebar" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SidebarController">
+    <children>
+        <Circle fill="WHITE" radius="19.0" stroke="BLACK" strokeType="INSIDE">
+            <VBox.margin>
+                <Insets left="22.0" top="25.0" />
+            </VBox.margin>
+        </Circle>
+        <ImageView fx:id="profileImage" fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+            <VBox.margin>
+                <Insets left="22.0" top="-40.0" />
+            </VBox.margin>
+        </ImageView>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="26.0" top="1.0" />
+            </VBox.margin>
+        </Text>
+        <Line endX="-36.57817840576172" endY="0.8285026550292969" startX="-97.4710693359375" startY="0.8284988403320312" stroke="WHITE">
+            <VBox.margin>
+                <Insets left="10.0" top="4.0" />
+            </VBox.margin>
+        </Line>
+        <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true"  onMouseClicked="#handleToBeranda" preserveRatio="true">
+            <image>
+                <Image url="@../Styles/Image/icon%20home.png" />
+            </image>
+            <VBox.margin>
+                <Insets left="27.0" top="14.0" />
+            </VBox.margin>
+        </ImageView>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Beranda">
+            <VBox.margin>
+                <Insets left="19.0" />
+            </VBox.margin>
+        </Text>
+        <ImageView fx:id="masukLowongan" fitHeight="37.0" fitWidth="32.0" onMouseClicked="#handleToLowongan" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Styles/Image/icon%20lowongan.png" />
+            </image>
+            <VBox.margin>
+                <Insets left="24.0" top="10.0" />
+            </VBox.margin>
+        </ImageView>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lowongan">
+            <VBox.margin>
+                <Insets left="14.0" top="1.0" />
+            </VBox.margin>
+        </Text>
+        <ImageView fx:id="masukPelatihan" fitHeight="37.0" fitWidth="35.0" onMouseClicked="#handleToPelatihan" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Styles/Image/icon%20pelatihan.png" />
+            </image>
+            <VBox.margin>
+                <Insets left="24.0" top="6.0" />
+            </VBox.margin>
+        </ImageView>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pelatihan">
+            <VBox.margin>
+                <Insets left="17.0" />
+            </VBox.margin>
+        </Text>
+        <ImageView fx:id="masukKomunitas" fitHeight="31.0" fitWidth="31.0" onMouseClicked="#handleToKomunitas" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Styles/Image/icon%20komunitas.png" />
+            </image>
+            <VBox.margin>
+                <Insets left="26.0" top="8.0" />
+            </VBox.margin>
+        </ImageView>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Komunitas">
+            <VBox.margin>
+                <Insets left="14.0" top="2.0" />
+            </VBox.margin>
+        </Text>
+        <ImageView fx:id="masukLangganan" fitHeight="30.0" fitWidth="28.0" onMouseClicked="#handleToLangganan" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Styles/Image/icon%20langganan.png" />
+            </image>
+            <VBox.margin>
+                <Insets left="29.0" top="9.0" />
+            </VBox.margin>
+        </ImageView>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Langganan">
+            <VBox.margin>
+                <Insets left="13.0" top="5.0" />
+            </VBox.margin>
+        </Text>
+        <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#handleLogout">
+            <image>
+                <Image url="@../Styles/Image/icon%20logout.png" />
+            </image>
+            <VBox.margin>
+                <Insets left="23.0" top="87.0" />
+            </VBox.margin>
+        </ImageView>
+    </children>
+</VBox>

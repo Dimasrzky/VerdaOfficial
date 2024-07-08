@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LowonganDetailController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="backButton" fitHeight="33.0" fitWidth="26.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Styles/Image/icon%20back.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kembali" textAlignment="CENTER" wrappingWidth="71.21154403686523">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <ScrollPane minHeight="378.0" prefHeight="567.0" prefWidth="800.0">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="547.0" prefWidth="798.0" spacing="20.0" style="-fx-padding: 20px;">
+               <children>
+                  <VBox id="perusahaanHeader" prefHeight="129.0" prefWidth="560.0" spacing="10.0">
+                     <children>
+                        <HBox prefHeight="88.0" prefWidth="574.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="99.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Styles/Image/logo%20perusahaan.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text fx:id="posisiText" strokeType="OUTSIDE" strokeWidth="0.0" text="Teknisi">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="107.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Styles/Image/icon%20verifikasi.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fx:id="perusahaanText" fill="#0f9ceb" strokeType="OUTSIDE" strokeWidth="0.0" text="PT Sumber Jaya">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <Text fx:id="lokasiText" strokeType="OUTSIDE" strokeWidth="0.0" text="Kota Denpasar">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #EBEBEB; -fx-background-radius: 20;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="560.0" style="-fx-background-color: #03CBB3; -fx-background-radius: 20;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Detail &amp; Persyaratan" textAlignment="CENTER" wrappingWidth="125.22137451171875">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <VBox prefHeight="165.0" prefWidth="560.0" spacing="3.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="520.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Styles/Image/icon%20gaji.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="gajiText" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp 10.000.000">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="520.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Styles/Image/icon%20jam.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="jenisWaktuText" strokeType="OUTSIDE" strokeWidth="0.0" text="Full time">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="520.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Styles/Image/icon%20pendidikan.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="kualifikasiText" strokeType="OUTSIDE" strokeWidth="0.0" text="S1 Informatika">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="520.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Styles/Image/icon%20user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maksimal usia 30 tahun">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="520.0" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Styles/Image/icon%20pengalaman.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pengalaman kerja minimal 2 tahun">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #EBEBEB; -fx-background-radius: 20;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="560.0" style="-fx-background-color: #03CBB3; -fx-background-radius: 20;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deskripsi Kerja" textAlignment="CENTER" wrappingWidth="93.8880615234375">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="165.0" prefWidth="560.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tentang Peran">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="tentangPeranText" strokeType="OUTSIDE" strokeWidth="0.0" text="Dummy" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="165.0" prefWidth="560.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Text fx:id="tentangPeran" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggung Jawab">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="tanggungJawabText" strokeType="OUTSIDE" strokeWidth="0.0" text="Dummy" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="melamarButton" mnemonicParsing="false" style="-fx-background-color: #03CBB3;" text="Melamar" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

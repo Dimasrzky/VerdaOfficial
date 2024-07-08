@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PlayVideoController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="799.0" preserveRatio="false">
+         <image>
+            <Image url="@../Styles/Image/farm%20background.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="backButton" fitHeight="33.0" fitWidth="26.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Styles/Image/icon%20back.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kembali" textAlignment="CENTER" wrappingWidth="71.21154403686523">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="577.0" prefWidth="800.0">
+               <children>
+                  <MediaView fx:id="videoView" fitHeight="500.0" fitWidth="700.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

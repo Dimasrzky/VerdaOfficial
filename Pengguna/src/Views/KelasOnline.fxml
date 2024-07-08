@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane stylesheets="@../Styles/Desain.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KelasOnlineController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="799.0" preserveRatio="false">
+         <image>
+            <Image url="@../Styles/Image/farm%20background.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="backButton" fitHeight="33.0" fitWidth="26.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Styles/Image/icon%20back.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kembali" textAlignment="CENTER" wrappingWidth="71.21154403686523">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="577.0" prefWidth="800.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="148.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sesi tersedia">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="sesiBox" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="731.0" spacing="15.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 20;" styleClass="quizBox">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="671.0" spacing="9.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Senin">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="08 Jul" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #9CD6F7; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selasa">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="09 Jul" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rabu">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Jul" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kamis">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="11 Jul" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jumat">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="12 Jul" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sabtu">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="13 Jul" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="88.0" spacing="1.0" style="-fx-background-color: #BDBDBD; -fx-background-radius: 10;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Minggu">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#555555" strokeType="OUTSIDE" strokeWidth="0.0" text="14 Jul" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="48.0" prefWidth="671.0" spacing="5.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Program" />
+                              <ComboBox fx:id="programCb" prefHeight="25.0" prefWidth="692.0" promptText="Pertanian" />
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="231.0" prefWidth="671.0">
+                           <children>
+                              <VBox prefHeight="195.0" prefWidth="269.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+                                 <children>
+                                    <ImageView fitHeight="68.0" fitWidth="283.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Styles/Image/kelasonline_cover1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox prefHeight="157.0" prefWidth="271.0">
+                                       <children>
+                                          <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="62.0" spacing="2.0" style="-fx-background-color: #9CD6F7; -fx-background-radius: 10;">
+                                             <children>
+                                                <ImageView fitHeight="14.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Styles/Image/icon%20alarm.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2 jam lagi">
+                                                   <font>
+                                                      <Font size="8.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selasa Bersih - Euforia bersama-sama dengan menjaga kebersihan " wrappingWidth="240.92315673828125">
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox alignment="CENTER" prefHeight="21.0" prefWidth="261.0" spacing="5.0">
+                                             <children>
+                                                <ImageView fitHeight="17.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Styles/Image/icon%20kalender.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00 - 15:00 WIB, 02 Juli 2024" wrappingWidth="240.92315673828125">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="21.0" prefWidth="261.0" spacing="5.0">
+                                             <children>
+                                                <ImageView fitHeight="17.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Styles/Image/icon%20mentor.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bapak Sutyo" wrappingWidth="240.92315673828125">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="39.0" prefWidth="261.0">
+                                             <children>
+                                                <Button fx:id="ikutiButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="261.0" style="-fx-background-color: #FFCC4D;" text="Ikuti Sesi">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

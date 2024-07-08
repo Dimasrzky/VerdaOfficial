@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Styles/Desain.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LowonganController">
+    <left>
+        <fx:include source="Sidebar.fxml" />
+    </left>
+    <top>
+        <HBox prefHeight="75.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Styles/Image/icon%20cari.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="185.0" right="16.0" top="17.0" />
+                    </HBox.margin>
+                </ImageView>
+                <TextField fx:id="searchField" prefHeight="47.0" prefWidth="430.0" promptText="Recruitment Fresh Graduate" styleClass="kolom-Search">
+                    <HBox.margin>
+                        <Insets left="-55.0" right="-611.0" top="8.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Italic" size="14.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="1.0" left="38.0" />
+                    </padding>
+                </TextField>
+                <ImageView fitHeight="59.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Styles/Image/Logo%20font.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets top="8.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Styles/Image/icon%20setting.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="668.0" top="18.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fitHeight="31.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Styles/Image/icon%20pesan.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="-71.0" top="22.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fitHeight="39.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Styles/Image/icon%20download.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="-75.0" top="15.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+   <center>
+      <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="526.0" prefWidth="718.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="192.0" text="Tambah Lowongan+" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ScrollPane prefHeight="599.0" prefWidth="658.0">
+               <content>
+                  <VBox prefHeight="593.0" prefWidth="1220.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pengguna Melamar">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <ScrollPane hbarPolicy="NEVER" minWidth="-Infinity" prefHeight="319.0" prefWidth="1220.0">
+                           <content>
+                              <TableView fx:id="table" prefHeight="238.0" prefWidth="750.0">
+                                <columns>
+                                  <TableColumn fx:id="no" prefWidth="32.66663300991058" text="Id" />
+                                  <TableColumn fx:id="namaPengguna" prefWidth="145.99999237060547" text="Nama Lengkap" />
+                                    <TableColumn fx:id="gender" prefWidth="100.66659545898438" text="Gender" />
+                                    <TableColumn fx:id="asal" prefWidth="109.3333740234375" text="Asal Daerah" />
+                                    <TableColumn fx:id="program" prefWidth="126.00009155273438" text="Pendidikan Terakhir" />
+                                    <TableColumn fx:id="program1" minWidth="0.0" prefWidth="136.6666259765625" text="Tentang" />
+                                    <TableColumn fx:id="aksi" minWidth="4.0" prefWidth="98.666748046875" text="Aksi" />
+                                </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lowongan Pekerjaan">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <ScrollPane hbarPolicy="NEVER" minWidth="-Infinity" prefHeight="287.0" prefWidth="1220.0">
+                           <content>
+                              <TableView fx:id="table1" prefHeight="317.0" prefWidth="1220.0">
+                                 <columns>
+                                    <TableColumn fx:id="no1" prefWidth="32.66663300991058" text="Id" />
+                                    <TableColumn fx:id="namaPengguna1" prefWidth="98.66669464111328" text="Posisi" />
+                                    <TableColumn fx:id="gender1" prefWidth="129.33326721191406" text="Perusahaan" />
+                                    <TableColumn fx:id="asal1" prefWidth="100.0" text="Lokasi" />
+                                    <TableColumn fx:id="program1" prefWidth="121.33328247070312" text="Gaji" />
+                                    <TableColumn fx:id="program11" minWidth="0.0" prefWidth="106.66680908203125" text="Kualifikasi" />
+                                    <TableColumn fx:id="program111" minWidth="0.0" prefWidth="113.333251953125" text="Jenis Waktu" />
+                                    <TableColumn fx:id="program1111" minWidth="0.0" prefWidth="129.33334350585938" text="Deskripsi Pekerjaan" />
+                                    <TableColumn fx:id="program11111" minWidth="0.0" prefWidth="129.33334350585938" text="Tanggung Jawab" />
+                                    <TableColumn fx:id="namaPengguna11" prefWidth="115.0" text="Waktu Diposting" />
+                                    <TableColumn fx:id="aksi1" prefWidth="84.66664632161462" text="Aksi" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

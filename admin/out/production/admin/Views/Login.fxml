@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Styles/Desain.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="285.0" stylesheets="@../Styles/Desain.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="-2.0" prefHeight="600.0" prefWidth="287.0">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Styles/Image/Logo%20font.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="56.0" top="49.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="-32.0" top="-25.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="TfEmail" prefHeight="38.0" prefWidth="245.0" promptText="Email" styleClass="Kolom-Input">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="45.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="PfPassword" prefHeight="38.0" prefWidth="245.0" promptText="Password" styleClass="Kolom-Input">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="9.0" left="15.0" right="15.0" top="7.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Text fx:id="errorMessage" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="*Email atau password salah!" visible="false">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="21.0" left="-90.0" right="72.0" top="-6.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Hyperlink fx:id="LupaPassword" text="Lupa password?" textFill="#3e004d">
+                     <font>
+                        <Font name="Arial" size="9.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="11.0" left="186.0" top="-34.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Button fx:id="btLogin" mnemonicParsing="false" prefHeight="49.0" prefWidth="50.0">
+                     <VBox.margin>
+                        <Insets bottom="-40.0" top="135.0" />
+                     </VBox.margin>
+                  </Button>
+                  <ImageView fx:id="IconClickLogin" fitHeight="38.0" fitWidth="35.0" onMouseClicked="#handleIconClickLogin" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Styles/Image/icon%20Login.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="-3.0" left="1.0" top="-2.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PT. Beyonder">
+                     <font>
+                        <Font name="Arial" size="6.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="38.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ImageView fitHeight="47.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Styles/Image/icon%20Copyright.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="50.0" top="-9.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="566.0" styleClass="cover-Login" stylesheets="@../Styles/Desain.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="32.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat datang!">
+               <font>
+                  <Font name="Tempus Sans ITC" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,105 @@
+.button {
+    -fx-background-color: #03CBB3;
+    -fx-background-radius: 8;
+}
+
+.Kolom-Input {
+    -fx-background-color: #ffffff00;
+    -fx-border-color: #000000;
+    -fx-border-radius: 2;
+}
+
+.cover-Login {
+    -fx-background-image: url("Image/cover%20login.jpeg");
+    -fx-background-size: 100% 100%;
+}
+
+.cover-Registrasi {
+    -fx-background-image: url("Image/Cover%20registrasi.png");
+    -fx-background-size: cover;
+}
+
+.kolom-Search {
+    -fx-background-color: #ffffff00;
+    -fx-border-color: #000000;
+    -fx-border-radius: 23;
+}
+
+.sidebar {
+    -fx-background-radius: 0 20 0 0;
+    -fx-background-color: linear-gradient(to bottom, #03CBB3, #006A5D);
+}
+
+.siramBar {
+    -fx-background-radius: 20;
+    -fx-background-color: linear-gradient(to right, #F4F4F4, #006A5D);
+}
+
+.button-siram {
+    -fx-background-color: #F4900C;
+}
+
+.kalender {
+    -fx-background-color: #006A5D;
+    -fx-background-radius: 20;
+}
+
+.video {
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 8;
+}
+
+.paneKutipan {
+    -fx-background-color: #555555;
+    -fx-border-color: #FFAC33;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.berita {
+    -fx-background-color: #cecece;
+    -fx-background-radius: 15;
+}
+
+.berita-Utama {
+    -fx-background-radius: 20;
+}
+
+.latarBelakang-Profile {
+    -fx-background-color: #006A5D;
+    -fx-min-height: 250px;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.data-Profile {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 22%, #B7B7B7 100%);
+    -fx-background-radius: 15;
+}
+
+.button-Filter {
+    -fx-background-color: #03CBB3;
+    -fx-background-radius: 2;
+}
+
+.tabel-Lowongan {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);
+    -fx-padding: 17px;
+}   
+
+.scroll {
+    -fx-background-color: #ffffff00;
+}
+
+.channel {
+    -fx-background-color: #F9F9F9;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+}
+
+.profile {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 35;
+}

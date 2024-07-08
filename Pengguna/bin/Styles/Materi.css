@@ -1,0 +1,11 @@
+.overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.disable-click {
+    -fx-cursor: not-allowed;
+    -fx-opacity: 0.5;
+    -fx-pointer-events: none;
+}
